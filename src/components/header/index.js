@@ -71,18 +71,9 @@ const HeaderComponent = ({ style, onNavigationItemPress }) => {
                 height: `${gallerySize}px`,
               }}
               imageSources={[
-                "/images/DSC00662.JPG",
-                "/images/DSC00667.JPG",
-                "/images/DSC00671.JPG",
-                "/images/DSC00664.JPG",
-                "/images/DSC00668.JPG",
-                "/images/DSC00672.JPG",
-                "/images/DSC00665.JPG",
-                "/images/DSC00669.JPG",
-                "/images/DSC00673.JPG",
                 "/images/DSC00666.JPG",
-                "/images/DSC00670.JPG",
-                "/images/DSC00674.JPG",
+                "/images/DSC00668.JPG",
+                "/images/DSC00671.JPG",
               ]} />
         </div>
       </header>

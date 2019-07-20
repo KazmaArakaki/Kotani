@@ -5,6 +5,28 @@ const styles = {
     backgroundColor: colors.darkBrown,
   },
 
+  contact: {
+    position: "sticky",
+    bottom: 0,
+    display: "block",
+    margin: "0",
+    paddingTop: "24px",
+    paddingRight: "8px",
+    paddingBottom: "24px",
+    paddingLeft: "8px",
+    height: "4vw",
+    color: colors.beige,
+    lineHeight: "4vw",
+    textAlign: "center",
+    fontFamily: "\"Sawarabi Mincho\", serif",
+    fontSize: "4vw",
+    fontWeight: 800,
+  },
+
+  contactIcon: {
+    marginRight: "4px",
+  },
+
   copyright: {
     margin: "0",
     paddingTop: "8px",
@@ -15,7 +37,7 @@ const styles = {
     color: colors.beige,
     lineHeight: "12px",
     textAlign: "center",
-    fontFamily: "\"Sawarabi Mincho\", sans-serif",
+    fontFamily: "\"Sawarabi Mincho\", serif",
     fontSize: "12px",
     fontWeight: 400,
   },
