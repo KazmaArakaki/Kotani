@@ -1,2 +1,4 @@
+.nginx-container-id
 start-server
+stop-server
 
