@@ -1,0 +1,226 @@
+<!doctype html>
+<html amp lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="https://kotani.page">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" />
+
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"MedicalClinic",
+        "image": [
+          "https://example.com/photos/1x1/photo.jpg",
+          "https://example.com/photos/4x3/photo.jpg",
+          "https://example.com/photos/16x9/photo.jpg"
+         ],
+        "@id":"https://kotani.page",
+        "name":"小谷はり灸所",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"大美野 158-23",
+          "addressLocality":"東区",
+          "addressRegion":"大阪府堺市",
+          "postalCode":"599-8126",
+          "addressCountry":"JP"
+        },
+        "geo":{
+          "@type":"GeoCoordinates",
+          "latitude":34.530760, 
+          "longitude":135.525911
+        },
+        "telephone":"+81072-237-5695",
+        "priceRange":"4000円（初診料 4500円)"
+      }
+    </script>
+
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1,end) 0s 1 normal both
+      }
+      @-webkit-keyframes -amp-start{
+        from { visibility: hidden }
+        to { visibility: visible }
+      }
+      @-moz-keyframes -amp-start {
+        from { visibility: hidden }
+        to { visibility: visible }
+       }
+      @-ms-keyframes -amp-start {
+        from { visibility: hidden }
+        to { visibility: visible }
+       }
+      @-o-keyframes -amp-start {
+        from { visibility: hidden }
+        to { visibility: visible }
+       }
+      @keyframes -amp-start {
+        from { visibility: hidden }
+        to { visibility: visible }
+      }
+    </style>
+
+    <style amp-custom>
+      :root {
+        --white: #ffffff;
+        --lightGray: #cccccc;
+        --gray: #999999;
+        --darkGray: #666666;
+        --black: #333333;
+        --beige: #fff4e6;
+        --lightBrown: #948a7d;
+        --brown: #635A4E;
+        --darkBrown: #352e23;
+        --tablet: 768px;
+        --mobile-l: 425px;
+        --mobile-m: 375px;
+        --mobile-s: 320px;
+      }
+
+      html {
+        background-color: var(--beige, #fff4e6);
+        color: var(--darkBrown, #352e23);
+        font-size: 4vw;
+        font-weight: 400;
+        font-family: "Sawarabi Mincho", serif;
+      }
+
+      body {
+        font-size: 150%;
+      }
+
+      @media (min-width: /* tablet */ 768px) {
+        body {
+          font-size: 46px;
+        }
+      }
+
+      .container {
+        position: relative;
+        margin: 0 auto;
+        max-width: var(--tablet, 768px);
+      }
+
+      .header {
+        position: relative;
+      }
+
+      .carousel {
+        margin-left: auto;
+      }
+
+      .amp-carousel-button {
+        display: none;
+      }
+
+      .carousel-item {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .carousel-item[data-index="1"] {
+        background-image: url(https://via.placeholder.com/150?text=Item+1);
+      }
+
+      .carousel-item[data-index="2"] {
+        background-image: url(https://via.placeholder.com/150?text=Item+2);
+      }
+
+      .carousel-item[data-index="3"] {
+        background-image: url(https://via.placeholder.com/150?text=Item+3);
+      }
+
+      .header-info-container {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        text-align: right;
+        text-shadow: -2px -2px 4px var(--beige, #fff4e6), 0px -2px 4px var(--beige, #fff4e6), 2px -2px 4px var(--beige, #fff4e6), -2px 0px 4px var(--beige, #fff4e6), 0px 0px 4px var(--beige, #fff4e6), 2px 0px 4px var(--beige, #fff4e6), -2px 2px 4px var(--beige, #fff4e6), 0px 2px 4px var(--beige, #fff4e6), 2px 2px 4px var(--beige, #fff4e6);
+      }
+
+      .header-info-title {
+        margin: 0;
+        font-size: 1.5em;
+      }
+
+      .header-info-text {
+        margin: 0;
+        font-size: 1em;
+      }
+
+      .google-map {
+        width: 100%;
+        height: 100vw;
+      }
+
+      @media (min-width: /* tablet */ 768px) {
+        .google-map {
+          height: 20rem;
+        }
+      }
+    </style>
+
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
+
+    <title>Hello, AMPs</title>
+  </head>
+ 
+  <body>
+    <header class="header">
+      <div class="container">
+        <amp-carousel class="carousel"
+            type="slides" height="1024" width="1024"
+            layout="responsive" sizes="(min-width: 768px) 512px, 72vw"
+            autoplay delay="5000" loop>
+          <div class="carousel-item" data-index="1"></div>
+          <div class="carousel-item" data-index="2"></div>
+          <div class="carousel-item" data-index="3"></div>
+        </amp-carousel>
+
+        <div class="header-info-container">
+          <h1 class="header-info-title">
+            Page Title
+          </h1>
+
+          <p class="header-info-text">
+            Text Text Text Text Text
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <amp-iframe class="google-map"
+          width="300" height="300"
+          sandbox="allow-scripts allow-same-origin"
+          layout="responsive"
+          src="https://www.google.com/maps/embed/v1/place?q=日本、大阪府堺市東区大美野１５８−２３+小谷はり灸所&key=AIzaSyAq92LVBH_q56vksTJoxfFtoApIJSlhKT4">
+        <amp-img layout="fill" placeholder
+            src="https://maps.googleapis.com/maps/api/staticmap?size=600x300&zoom=16&markers=34.530760,135.525895&key=AIzaSyAq92LVBH_q56vksTJoxfFtoApIJSlhKT4"></amp-img>
+      </amp-iframe>
+    </main>
+
+    <aside class="aside">
+    </aside>
+
+    <footer class="footer">
+    </footer>
+  </body>
+</html>
+
