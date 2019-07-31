@@ -5,36 +5,47 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="canonical" href="https://kotani.page">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
 
     <script type="application/ld+json">
       {
-        "@context":"https://schema.org",
-        "@type":"MedicalClinic",
+        "@id": "https://kotani.page/",
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "url": "https://kotani.page/",
+        "name": "小谷はり灸所",
+        "description": "小谷はり灸所",
+        "telephone": "+810722375695",
+        "priceRange": "4000円（初診料 4500円)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "JP",
+          "postalCode": "599-8126",
+          "addressRegion": "大阪府堺市",
+          "addressLocality": "東区",
+          "streetAddress": "大美野 158-23"
+        },
+        "hasMap": "https://goo.gl/maps/zokENZeg2BzyzTsZ9",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 34.530760, 
+          "longitude": 135.525911
+        },
+        "openingHours": [
+          "Mo,Tu,We,Fr 09:00-12:30",
+          "Mo,Tu,We,Fr 15:00-21:00"
+        ],
+        "currenciesAccepted": "JPY",
+        "paymentAccepted": "Cash",
         "image": [
-          "https://example.com/photos/1x1/photo.jpg",
-          "https://example.com/photos/4x3/photo.jpg",
-          "https://example.com/photos/16x9/photo.jpg"
-         ],
-        "@id":"https://kotani.page",
-        "name":"小谷はり灸所",
-        "address":{
-          "@type":"PostalAddress",
-          "streetAddress":"大美野 158-23",
-          "addressLocality":"東区",
-          "addressRegion":"大阪府堺市",
-          "postalCode":"599-8126",
-          "addressCountry":"JP"
-        },
-        "geo":{
-          "@type":"GeoCoordinates",
-          "latitude":34.530760, 
-          "longitude":135.525911
-        },
-        "telephone":"+81072-237-5695",
-        "priceRange":"4000円（初診料 4500円)"
+          "https://kotani.page/assets/images/DSC00666.JPG",
+          "https://kotani.page/assets/images/DSC00668.JPG",
+          "https://kotani.page/assets/images/DSC00671.JPG"
+        ]
       }
     </script>
 
@@ -126,15 +137,15 @@
       }
 
       .carousel-item[data-index="1"] {
-        background-image: url(https://via.placeholder.com/150?text=Item+1);
+        background-image: url(./assets/images/DSC00666.JPG);
       }
 
       .carousel-item[data-index="2"] {
-        background-image: url(https://via.placeholder.com/150?text=Item+2);
+        background-image: url(./assets/images/DSC00668.JPG);
       }
 
       .carousel-item[data-index="3"] {
-        background-image: url(https://via.placeholder.com/150?text=Item+3);
+        background-image: url(./assets/images/DSC00671.JPG);
       }
 
       .header-info-container {
@@ -155,6 +166,45 @@
         font-size: 1em;
       }
 
+      .navigation {
+        background-color: var(--darkBrown, #352e23);
+      }
+
+      .navigation-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navigation-item {
+        display: block;
+      }
+
+      .navigation-action {
+        display: block;
+        padding: .5rem 1rem;
+        color: var(--beige, #fff4e6);
+        text-decoration: none;
+      }
+
+      .main {
+      }
+
+      .main-headline {
+        margin: 1rem 0 1rem;
+        padding: 0 1rem;
+      }
+
+      .main > section h1 {
+        margin: 2rem 0 1rem;
+        padding: 0 1rem;
+      }
+
+      .main > section p {
+        margin: 1rem 0 1rem;
+        padding: 0 1rem;
+      }
+
       .google-map {
         width: 100%;
         height: 100vw;
@@ -164,6 +214,35 @@
         .google-map {
           height: 20rem;
         }
+      }
+
+      .aside {
+      }
+
+      .aside-share {
+        display: flex;
+      }
+
+      .aside-share amp-social-share {
+        flex: 1;
+      }
+
+      .footer {
+        background-color: var(--darkBrown, #352e23);
+      }
+
+      .footer-contact {
+        display: block;
+        padding: 1rem;
+        color: var(--beige, #fff4e6);
+        text-align: center;
+      }
+
+      .footer-copyright {
+        margin: 0;
+        padding: 1rem;
+        color: var(--beige, #fff4e6);
+        text-align: center;
       }
     </style>
 
@@ -178,7 +257,9 @@
       </style>
     </noscript>
 
-    <title>Hello, AMPs</title>
+    <title>
+      小谷はり灸所
+    </title>
   </head>
  
   <body>
@@ -195,17 +276,121 @@
 
         <div class="header-info-container">
           <h1 class="header-info-title">
-            Page Title
+            小谷はり灸所
           </h1>
 
           <p class="header-info-text">
-            Text Text Text Text Text
+            072-237-5695
+
+            <a href="tel:0722375695">
+              [TEL]
+            </a>
+          </p>
+
+          <p class="header-info-text">
+            堺市東区大美野 158-23
+
+            <a href="https://goo.gl/maps/zokENZeg2BzyzTsZ9" target="_blank">
+              [MAP]
+            </a>
           </p>
         </div>
       </div>
     </header>
 
+    <nav class="navigation">
+      <div class="container">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#opening-hours" class="navigation-action">
+              診療時間
+            </a>
+
+            <a href="#subjects" class="navigation-action">
+              診療科目
+            </a>
+
+            <a href="#billings" class="navigation-action">
+              診療費
+            </a>
+
+            <a href="#address" class="navigation-action">
+              所在地
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <main class="main">
+      <div class="container">
+        <p class="main-headline">
+          ４年間本場・台湾で修行をした女性鍼灸師が痛くない鍼灸治療をいたします。
+        </p>
+      <div class="container">
+
+      <section id="opening-hours">
+        <div class="container">
+          <h1>
+            診療時間
+          </h1>
+
+          <p>
+            午　前： 9:00 - 12:30
+            <br>
+            午　後： 15:00 - 21:00
+            <br>
+            休診日：木・土・日曜日および祝日
+          </p>
+        </div>
+      </section>
+
+      <section id="subjects">
+        <div class="container">
+          <h1>
+            診療科目
+          </h1>
+
+          <p>
+            肩こり・腰痛各種痛み
+            <br>
+            生理不良・逆子治療
+            <br>
+            自律神経失調・精神不安
+          </p>
+        </div>
+      </section>
+
+      <section id="billings">
+        <div class="container">
+          <h1>
+            診療費
+          </h1>
+
+          <p>
+            4000円（初診料 4500）
+          </p>
+        </div>
+      </section>
+
+      <section id="address">
+        <div class="container">
+          <h1>
+            所在地
+          </h1>
+
+          <p>
+            〒599-8126
+            <br>
+            大阪府堺市東区大美野 158-23
+            <br>
+            <a href="https://goo.gl/maps/TACKWyvRAxi3q37e9" target="_blank">
+              南海北野田駅からバスで16分
+            </a>
+          </p>
+        </div>
+      </section>
+
       <amp-iframe class="google-map"
           width="300" height="300"
           sandbox="allow-scripts allow-same-origin"
@@ -217,9 +402,27 @@
     </main>
 
     <aside class="aside">
+      <div class="aside-share">
+        <amp-social-share type="facebook"></amp-social-share>
+        <amp-social-share type="twitter"></amp-social-share>
+        <amp-social-share type="line"></amp-social-share>
+      </div>
     </aside>
 
     <footer class="footer">
+      <a href="tel:0722375695" class="footer-contact">
+        <i class="fas fa-mobile-alt"></i>
+
+        お電話でのお問い合わせ
+      </a>
+
+      <div class="container">
+        <p class="footer-copyright">
+          <small>
+            © 2019 小谷はり灸所
+          </small>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
