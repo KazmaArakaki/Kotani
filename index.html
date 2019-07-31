@@ -42,9 +42,9 @@
         "currenciesAccepted": "JPY",
         "paymentAccepted": "Cash",
         "image": [
-          "https://example.com/photos/1x1/photo.jpg",
-          "https://example.com/photos/4x3/photo.jpg",
-          "https://example.com/photos/16x9/photo.jpg"
+          "https://kotani.page/assets/images/DSC00666.JPG",
+          "https://kotani.page/assets/images/DSC00668.JPG",
+          "https://kotani.page/assets/images/DSC00671.JPG"
         ]
       }
     </script>
@@ -137,15 +137,15 @@
       }
 
       .carousel-item[data-index="1"] {
-        background-image: url(https://via.placeholder.com/150?text=Item+1);
+        background-image: url(./assets/images/DSC00666.JPG);
       }
 
       .carousel-item[data-index="2"] {
-        background-image: url(https://via.placeholder.com/150?text=Item+2);
+        background-image: url(./assets/images/DSC00668.JPG);
       }
 
       .carousel-item[data-index="3"] {
-        background-image: url(https://via.placeholder.com/150?text=Item+3);
+        background-image: url(./assets/images/DSC00671.JPG);
       }
 
       .header-info-container {
@@ -191,6 +191,8 @@
       }
 
       .main-headline {
+        margin: 1rem 0 1rem;
+        padding: 0 1rem;
       }
 
       .main > section h1 {
@@ -255,7 +257,9 @@
       </style>
     </noscript>
 
-    <title>Hello, AMPs</title>
+    <title>
+      小谷はり灸所
+    </title>
   </head>
  
   <body>
@@ -272,11 +276,23 @@
 
         <div class="header-info-container">
           <h1 class="header-info-title">
-            Page Title
+            小谷はり灸所
           </h1>
 
           <p class="header-info-text">
-            Text Text Text Text Text
+            072-237-5695
+
+            <a href="tel:0722375695">
+              [TEL]
+            </a>
+          </p>
+
+          <p class="header-info-text">
+            堺市東区大美野 158-23
+
+            <a href="https://goo.gl/maps/zokENZeg2BzyzTsZ9" target="_blank">
+              [MAP]
+            </a>
           </p>
         </div>
       </div>
@@ -286,8 +302,20 @@
       <div class="container">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-action">
-              Nav 1
+            <a href="#opening-hours" class="navigation-action">
+              診療時間
+            </a>
+
+            <a href="#subjects" class="navigation-action">
+              診療科目
+            </a>
+
+            <a href="#billings" class="navigation-action">
+              診療費
+            </a>
+
+            <a href="#address" class="navigation-action">
+              所在地
             </a>
           </li>
         </ul>
@@ -295,11 +323,13 @@
     </nav>
 
     <main class="main">
-      <p class="main-headline">
-        ４年間本場・台湾で修行をした女性鍼灸師が痛くない鍼灸治療をいたします。
-      </p>
+      <div class="container">
+        <p class="main-headline">
+          ４年間本場・台湾で修行をした女性鍼灸師が痛くない鍼灸治療をいたします。
+        </p>
+      <div class="container">
 
-      <section>
+      <section id="opening-hours">
         <div class="container">
           <h1>
             診療時間
@@ -315,7 +345,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="subjects">
         <div class="container">
           <h1>
             診療科目
@@ -331,7 +361,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="billings">
         <div class="container">
           <h1>
             診療費
@@ -343,7 +373,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="address">
         <div class="container">
           <h1>
             所在地
