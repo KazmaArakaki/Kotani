@@ -202,6 +202,12 @@
         font-size: .8em;
       }
 
+      @media (min-width: /* tablet */ 768px) {
+        body {
+          font-size: 36px;
+        }
+      }
+
       .main {
       }
 
@@ -258,6 +264,12 @@
         padding: 1rem;
         color: var(--beige, #fff4e6);
         text-align: center;
+      }
+
+      .footer-copyright-logo {
+        margin-bottom: -2px;
+        width: 1em;
+        height: 1em;
       }
     </style>
 
@@ -441,6 +453,8 @@
         <p class="footer-copyright">
           <small>
             © 2019 小谷はり灸所
+
+            <img src="/assets/images/logo.svg" class="footer-copyright-logo">
           </small>
         </p>
       </div>
