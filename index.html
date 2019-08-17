@@ -267,9 +267,11 @@
       }
 
       .footer-copyright-logo {
+        position: relative;
+        display: inline-block;
         margin-bottom: -2px;
-        width: 1em;
-        height: 1em;
+        width: .8em;
+        height: .8em;
       }
     </style>
 
@@ -455,9 +457,11 @@
         <p class="footer-copyright">
           <small>
             © 2019 小谷はり灸所
-
-            <img src="/assets/images/logo.svg" class="footer-copyright-logo">
           </small>
+
+          <span class="footer-copyright-logo">
+            <amp-img src="/assets/images/logo.svg" layout="fill">
+          </span>
         </p>
       </div>
     </footer>
